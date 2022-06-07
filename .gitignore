@@ -1,0 +1,23 @@
+# temporary directories
+tmp/
+
+*.o
+*.so
+*.a
+a.out
+parser.tab.*
+lex.yy.c
+lowx
+core
+tags
+
+notes
+Notes
+todo
+Todo
+
+*.bak
+*.tar.gz
+*.tar.bz2
+*.zip
+

@@ -1,0 +1,13 @@
+#
+# dihedral group of order 8
+#
+
+group = < f, r | (f * r)^2, f^2, r^4 >;
+
+# subgens = <f^0>;
+# subgens = <f>;
+subgens = <r>;
+# subgens = <f*r>;
+
+# normal_subgroups;
+# max_index = 5;

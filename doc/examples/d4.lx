@@ -1,0 +1,8 @@
+#
+# dihedral group of order 8
+#
+
+group = < a, b | (a * b)^2, a^2, b^4 >;
+
+normal_subgroups;
+max_index = 5;
