@@ -9,13 +9,13 @@ tasks:
       echo 'export PATH=~/.local/bin:$PATH' >> .buildenv
       mkdir -p .local/bin
   - build: |
-      cd src
-      make lox
+      cd lowx/src
+      make lowx
   - install: |
-      cd src
+      cd lowx/src
       make install
   - test: |
       lowx -v
-      lowx doc/examples/ultimate.lx
+      lowx lowx/doc/examples/ultimate.lx
 artifacts:
   - .local/bin/lowx
