@@ -18,5 +18,5 @@ and issue the `make` command.
 
 Use of this software is granted under the terms of the GNU Affero General
 Public License. For the exact details of licensing, see the documentation
-and the file `doc/COPYING`.
+and the file `COPYING`.
 
