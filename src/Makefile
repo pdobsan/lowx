@@ -73,6 +73,7 @@ lex.yy.o: lex.yy.c parser.tab.h
 install: $(BINDIR)/lowx
 
 $(BINDIR)/lowx: lowx
+	mkdir -p $(BINDIR)
 	install lowx $(BINDIR)
 
 uninstall:

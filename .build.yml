@@ -7,7 +7,6 @@ sources:
 tasks:
   - setup-env: |
       echo 'export PATH=~/.local/bin:$PATH' >> .buildenv
-      mkdir -p .local/bin
   - build: |
       cd lowx/src
       make lowx
