@@ -6,7 +6,6 @@ pipeline:
       - make lowx
       - ./lowx ../doc/examples/ultimate.lx
       - make install
-      - echo "PATH: $PATH"
   test:
     image: archlinux:base-devel
     commands:
