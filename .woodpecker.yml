@@ -1,11 +1,5 @@
 pipeline:
-  setup:
-    image: archlinux
-    commands:
-      - pacman -Syu 
-      - pacman-key --init
-      - pacman -S base-devel
   build:
-    image: archlinux
+    image: archlinux/gcc
       - cd src
       - make
