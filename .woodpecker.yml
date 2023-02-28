@@ -9,6 +9,7 @@ pipeline:
     image: archlinux:base-devel
     commands:
       - pwd
+      - echo $${CI_WORKSPACE}
       - export PATH=$${PATH}:$${PWD}/src
       - which -a lowx
       - cd doc/examples
