@@ -5,16 +5,12 @@ pipeline:
       - cd src
       - make lowx
       - ./lowx ../doc/examples/ultimate.lx
-      - make install
-      - install lowx /usr/local/bin
-      - which -a lowx
   test:
     image: archlinux:base-devel
     commands:
       - pwd
-      - ls -al /root/.local/bin /usr/local/bin
-      - export PATH=$${PATH}:/root/.local/bin
-      - echo $${PATH}
+      - export PATH=$${PATH}:$${PWD}/src
+      - which -a lowx
       - cd doc/examples
       - lowx s7.lx
       - lowx mix4.lx
