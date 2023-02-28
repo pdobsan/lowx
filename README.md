@@ -1,5 +1,7 @@
 # Lowx
 
+[![status-badge](https://ci.codeberg.org/api/badges/petrus/lowx/status.svg)](https://ci.codeberg.org/petrus/lowx)
+
 **`lowx`** is a program to determine all subgroups of a finitely-presented
 group up to a given "low" index.
 
