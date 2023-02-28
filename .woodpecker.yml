@@ -2,5 +2,6 @@ pipeline:
   build:
     image: archlinux
     commands:
+      - pacman -S --needed --noconfirm --noprogressbar base-devel
       - cd src
       - make
