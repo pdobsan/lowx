@@ -3,5 +3,5 @@ pipeline:
     image: archlinux:base-devel
     commands:
       - cd src
-      - make
+      - make lowx
       - ./lowx
