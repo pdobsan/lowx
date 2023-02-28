@@ -1,0 +1,6 @@
+pipeline:
+  build:
+    image: archlinux
+    commands:
+      - cd src
+      - make
