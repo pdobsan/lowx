@@ -6,10 +6,12 @@ pipeline:
       - make lowx
       - ./lowx ../doc/examples/ultimate.lx
       - make install
+      - ls -al /root/.local/bin
   test:
     image: archlinux:base-devel
     commands:
       - export PATH=$${PATH}:/root/.local/bin
+      - echo $${PATH}
       - cd doc/examples
       - lowx s7.lx
       - lowx mix4.lx
