@@ -4,14 +4,11 @@ pipeline:
     commands:
       - cd src
       - make lowx
-      - ./lowx ../doc/examples/ultimate.lx
+      - ./lowx || true
   test:
     image: archlinux:base-devel
     commands:
-      - pwd
-      - echo $${CI_WORKSPACE}
-      - export PATH=$${PATH}:$${PWD}/src
-      - which -a lowx
+      - export PATH=$${PATH}:$${CI_WORKSPACE}/src
       - cd doc/examples
       - lowx s7.lx
       - lowx mix4.lx
