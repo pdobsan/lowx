@@ -1,10 +1,7 @@
 pipeline:
   build:
-    image: archlinux
+    image: archlinux/base-devel
     commands:
-      - pacman-key --init
-      - pacman -Syu 
-      - pacman -S base-devel
       - cd src
       - make
       - ./lowx
