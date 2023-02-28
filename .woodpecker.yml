@@ -1,8 +1,11 @@
 pipeline:
-  build:
+  setup:
     image: archlinux
     commands:
       - pacman -Syu 
-      - pacman -S --needed --noconfirm --noprogressbar base-devel
+      - pacman-key --init
+      - pacman -S base-devel
+  build:
+    image: archlinux
       - cd src
       - make
