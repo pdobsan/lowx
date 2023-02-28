@@ -7,3 +7,4 @@ pipeline:
       - pacman -S base-devel
       - cd src
       - make
+      - ./lowx
