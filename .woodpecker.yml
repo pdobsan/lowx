@@ -1,6 +1,6 @@
 pipeline:
   build:
-    image: archlinux/base-devel
+    image: archlinux:base-devel
     commands:
       - cd src
       - make
