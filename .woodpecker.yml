@@ -1,11 +1,11 @@
 pipeline:
-  -
+  - name: build
     image: archlinux:base-devel
     commands:
       - cd src
       - make lowx
       - ./lowx || true
-  -
+  - name: test
     image: archlinux:base-devel
     commands:
       - export PATH=$${PATH}:$${CI_WORKSPACE}/src
