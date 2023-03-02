@@ -1,0 +1,16 @@
+pipeline:
+  build:
+    image: menci/archlinuxarm:base-devel
+    commands:
+      - cd src
+      - make lowx
+      - ./lowx || true
+  test:
+    image: archlinux:base-devel
+    commands:
+      - export PATH=$${PATH}:$${CI_WORKSPACE}/src
+      - cd doc/examples
+      - lowx s7.lx
+      - lowx mix4.lx
+      - lowx ultimate.lx
+      - lowx d4.lx
